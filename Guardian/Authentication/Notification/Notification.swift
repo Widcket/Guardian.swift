@@ -52,6 +52,8 @@ public protocol Notification {
      */
     var transactionToken: String { get }
 
+    var transactionLinkingId: String? { get }
+
     /**
      The challenge sent by the server. The same challenge, signed, should be 
      sent back when trying to allow or reject an authentication request

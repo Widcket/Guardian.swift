@@ -33,7 +33,7 @@ struct AuthenticationNotification: Notification, CustomDebugStringConvertible, C
     let location: Location?
     let startedAt: Date
 
-    init(domain: String, enrollmentId: String, transactionToken: String, transactionLinkingId: String?, challenge: String, startedAt: Date, source: Source?, location: Location?) {
+    init(domain: String, enrollmentId: String, transactionToken: String, transactionLinkingId: String? = nil, challenge: String, startedAt: Date, source: Source?, location: Location?) {
         self.domain = domain
         self.enrollmentId = enrollmentId
         self.transactionToken = transactionToken
